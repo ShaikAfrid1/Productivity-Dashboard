@@ -32,7 +32,7 @@ A clean and interactive dashboard to boost your daily productivity with live tim
 
 ## Author
 
-- 💡 Created by Afrid Shaik (https://github.com/ShaikAfrid1))
+- 💡 Created by Afrid Shaik (https://github.com/ShaikAfrid1) (https://www.linkedin.com/in/afrid-shaik-7169521a0/)
 
 ##  Live Demo
 
