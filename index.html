@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/data-report.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Productivity Dashboard</h1></header>
+
+      <section class="dashboard">
+        <div class="time">
+          <h2 id="current-time">Loading Time...</h2>
+          <p id="current-date">Loading Date...</p>
+        </div>
+
+        <div class="quote-box">
+          <p id="quote-text">loading Quote...</p>
+          <p id="quote-author">—</p>
+          <button id="quote-btn" onclick="getRandomQuote()">New Quote</button>
+        </div>
+
+        <div class="weather">
+          <h3>Weather:</h3>
+          <p id="weather">Fetching Weather...</p>
+          <input type="text" id="cityInput" placeholder="Enter city" />
+          <button
+            id="weather-btn"
+            onclick="getWeather(document.getElementById('cityInput').value)"
+          >
+            Get Weather
+          </button>
+        </div>
+
+        <div class="todo">
+          <h3>To-Do List</h3>
+          <ul id="todo-list"></ul>
+          <input type="text" id="todo-input" placeholder="Add a task..." />
+          <button id="add-todo">Add Task</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

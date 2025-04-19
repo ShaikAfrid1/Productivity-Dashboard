@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(1, 1, 1, 0.1);
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+h2,
+h3 {
+  color: #333;
+}
+.quote,
+.weather,
+.todo,
+time {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+#todo-input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+#add-todo {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+#add-todo:hover {
+  background-color: #45a049;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#quote-btn {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #fff59d;
+  color: #f57f17;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#quote-btn:hover {
+  background-color: #ffeb3bae;
+  box-shadow: 0 0 1px #fbc02d;
+}
+.quote-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+#quote-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#quote-author {
+  font-style: italic;
+  color: #666;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#quote-text {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#weather-btn {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #4d4a4a;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#weather-btn:hover {
+  background-color: #4d2727;
+  box-shadow: 0 0 1px #000;
+}
+
+ul#todo-list li button {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.3s ease;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul#todo-list li button:hover {
+  color: #ff1a1a; /* Darker red on hover */
+  transform: scale(1.2); /* Grow effect on hover */
+}
+
+ul#todo-list li button:active {
+  transform: scale(0.9); /* Shrinks when clicked */
+}
